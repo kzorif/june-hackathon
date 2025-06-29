@@ -9,7 +9,7 @@ from copy import deepcopy
 
 # --- Configuration ---
 MODEL_WEIGHTS = "./yolov8n.pt"
-IMAGE_PATH = "./img/person.jpg"
+IMAGE_PATH = "./img/cat.jpg"
 INPUT_SIZE = 640
 CONF_THRESHOLD = 0.25
 IOU_THRESHOLD = 0.45
@@ -511,7 +511,7 @@ class DetectionModel(nn.Module):
 
 def load_yolo_model_from_pt(weights_path, device):
     print(f"Loading model from {weights_path}...")
-    ckpt = torch.load(weights_path, map_location=device)
+    ckpt = torch.load(weights_path, map_location=device, weights_only=False)
     model_cfg = ckpt["model"].yaml
     model = DetectionModel(cfg=model_cfg, ch=3, nc=model_cfg["nc"])
     state_dict = ckpt["model"].float().state_dict()
