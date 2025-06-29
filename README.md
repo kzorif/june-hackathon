@@ -20,8 +20,8 @@ The benchmark measures the core inference latency (in milliseconds) of each mode
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone https://github.com/kzorif/june-hackathon.git
+cd june-hackathon 
 ```
 
 ### 2. Initialize the Pixi Environment

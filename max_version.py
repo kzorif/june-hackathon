@@ -21,7 +21,7 @@ except ImportError:
 
 # --- Configuration ---
 MODEL_WEIGHTS = "./yolov8n.pt"
-IMAGE_PATH = "./elephante.jpeg"
+IMAGE_PATH = "./img/person.jpg"
 INPUT_SIZE = 640
 CONF_THRESHOLD = 0.10
 IOU_THRESHOLD = 0.30
