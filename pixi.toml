@@ -1,0 +1,17 @@
+[workspace]
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+name = "june-hackathon"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+modular = ">=25.5.0.dev2025062905,<26"
+
+[pypi-dependencies]
+opencv-python = ">=4.11.0.86, <5"
+torchvision = ">=0.22.1, <0.23"
+ultralytics = ">=8.3.160, <9"
+pyyaml = "*"
+tqdm = "*"
